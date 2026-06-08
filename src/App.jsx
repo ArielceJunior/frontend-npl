@@ -26,7 +26,7 @@ const HexIcon = ({ size = 20, color = "#888" }) => (
 );
 
 const MazeBackground = () => (
-  <svg style={{ position: "fixed", inset: 0, width: "100%", height: "100%", opacity: 0.05, pointerEvents: "none", zIndex: 0 }} xmlns="http://www.w3.org/2000/svg">
+  <svg style={{ position: "fixed", inset: 0, width: "100%", height: "100%", opacity: 0.04, pointerEvents: "none", zIndex: 0 }} xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="maze" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
         <rect width="60" height="60" fill="none" />
@@ -191,7 +191,7 @@ export default function App() {
             </div>
           </div>
           <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 6 }}>
-            <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#444" }} />
+            <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#22a52d" }} />
             <span style={{ fontSize: 10, color: "#555", fontFamily: "'Space Mono', monospace" }}>online</span>
           </div>
         </div>
