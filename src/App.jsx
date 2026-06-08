@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
 const API_URL = "https://api-flask-npl.onrender.com/api";
-const API_KEY = "AIzaSyCi3DlsbGCaDB7xbe8SneX-NlXc36kpJF8";
 
 const SUGGESTIONS = [
   "O que é Backtracking?",
@@ -121,7 +120,6 @@ export default function App() {
     try {
       const res = await fetch(API_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json", Authorization: API_KEY },
         body: JSON.stringify({ consulta }),
       });
       const data = await res.json();
